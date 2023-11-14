@@ -1,7 +1,5 @@
 import unittest
 from app import app
-import io
-import sys
 
 
 class TestQuadraticFunction(unittest.TestCase):
