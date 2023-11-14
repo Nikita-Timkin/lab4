@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/design.css') }}">
+  </head>
+  <body>
+    <div>
+    <header class="top">
+      <img id="headerLogo"
+           src="Шапка м.png" alt="Нахождение корней квадратного уравнения">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/scheme">Схема решения квадратного уравнения</a></li>
+        <li><a href="/links">Полезные ссылки</a></li>
+        <li><a href="/about">Об авторе</a></li>
+      </ul>
+      </nav>
+
+    <h1>Корни:</h1>
+
+    <p>Первый корень: {{ root1 }}</p>
+    <p>Второй корень: {{ root2 }}</p>
+
+      <p><li><a href="/">Решить другое уравнение</a></li></p>
+
+      <footer>
+        &copy; 2023, Тимкин Н.
+      </footer>
+    </div>
+  </body>
+</html>
